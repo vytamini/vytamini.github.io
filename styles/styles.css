@@ -1,0 +1,498 @@
+/* Base styles */
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23cfcfcf' fill-opacity='0.17' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 6em;
+    margin: 0;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+
+    background: linear-gradient(38deg, #20bc94, #757eba, #804598);
+    background-size: 600% 600%;
+    -webkit-animation: gradient-rotate 29s ease infinite;
+    -moz-animation: gradient-rotate 29s ease infinite;
+    -o-animation: gradient-rotate 29s ease infinite;
+    animation: gradient-rotate 29s ease infinite 
+}
+
+@keyframes gradient-rotate {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.footer {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em 0;
+    margin: 0;
+    height: auto;
+    margin: 6em auto 0 auto;
+    text-align: center;
+
+    background: linear-gradient(38deg, #20bc94, #757eba, #804598);
+    background-size: 600% 600%;
+    -webkit-animation: gradient-rotate 29s ease infinite;
+    -moz-animation: gradient-rotate 29s ease infinite;
+    -o-animation: gradient-rotate 29s ease infinite;
+    animation: gradient-rotate 29s ease infinite 
+}
+
+@keyframes gradient-rotate {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+    
+
+.footer > p > a {
+    color: rgb(255, 166, 0);  
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.footer > p > a:hover {
+    color: #fff;    
+}
+
+/* ------------- */
+
+/* Navigation styles */
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    display: inline-block;
+    margin-right: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    line-height: 40px;
+    height: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 0 1em;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: #505050;
+}
+
+.nav a:active { 
+    background-color: #505050;
+    color: #fff;
+}
+
+.nav a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    cursor: default;
+}
+
+.nav a.active:hover {
+    background: none;
+}
+
+
+/* ------------------------------ */
+
+/* Styles for headings */
+
+.title {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 1.2em 0;
+}
+
+.sub-title {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 1.2em 0; 
+}
+
+.sub-title > a {
+    color: rgba(32,124,229,1);
+    transition-duration: 1s;
+}
+
+.sub-title > a:hover {
+    color: rgb(255, 166, 0);
+}
+
+/* -------------- */
+
+/* Scroll button */
+
+.scroll-btn {
+    width: 18%;
+    font-size: 2.5em;
+    display: inline-block;
+    background: linear-gradient(#ffd000, #ff9854);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    text-shadow: 2px 2px 7px #666666;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    box-shadow: 1px 1px 3px #666666;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    padding: 0.2em 0.4em;
+    cursor: pointer;
+  }
+
+  .scroll-btn:hover {
+    background: linear-gradient(#ffe68a, #fca874);
+  }
+
+  object > p {
+      font-family: 'Open Sans', sans-serif;
+  }
+
+  object > p > a {
+    color: rgba(32,124,229,1);
+  }
+
+  object > p > a:hover {
+    color: rgb(255, 166, 0);
+  }
+
+  /* -------------- */
+
+/* ------------------- */
+
+/* Back to top button */
+
+#topBtn {
+    display: none; /*Remains hidden until the user scrolls down*/
+    cursor: pointer;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 3.5em;
+    right: 2em;
+    z-index: 2; /* Always on top of other elements */
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white; 
+    padding: 0.5em;
+    transition-duration: 1s;
+}
+
+#topBtn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+s {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+/* ---------------------- */
+
+/* Contact section styles */
+.contact-title {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 1.2em 0 0.5em 0;
+}
+
+.contact-box {
+    background: rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: auto;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.contact-box > p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+.contact-box > p > a {
+    color: rgb(255, 166, 0);
+    transition-duration: 1s;
+}
+
+.contact-box > p > a:hover {
+    color: #fff;
+}
+
+/* ------------------------- */
+
+/* About section styles */
+.about-title {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 0.6em 0;
+}
+
+.about-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 0 4em 0;
+}
+
+.skillset{
+    margin: auto auto;
+    width: 60%;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.075);
+    vertical-align: center;
+}
+.skillset ul {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skillset ul > li{
+    padding: 0.4em 0;
+}
+
+/* ---------------------- */
+
+/*Creations page project list*/
+
+
+.project{
+    width: 100%;
+    padding: 1em 0;
+}
+
+.project-title{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    padding: 0.5em auto;
+}
+
+.project-body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    color: #000; 
+}
+
+.project-body > p {
+    width: 60%;
+    margin: 1em auto 3em auto;
+}
+
+.project-body > a {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-decoration: none;
+}
+
+.project > img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.project-footer{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: center;
+    padding: 0.6em 0 2em 0;
+    border-bottom: 1px solid #000;
+}
+
+.project-btn {
+    width: 18%;
+    font-size: 1.5em;
+    display: block;
+    background: linear-gradient(#739fff, #588dff);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    text-shadow: 2px 2px 7px #666666;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    box-shadow: 1px 1px 3px #666666;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    padding: 0.2em 0.4em;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  .project-btn:hover {
+    background: linear-gradient(#a0beff, #6c9aff);
+  }
+
+/* ----------------------------- */
+
+/* Media queries */
+
+@media (max-width: 1100px) {
+
+    .title {
+        font-size: 3rem;
+    }
+
+    #topBtn {
+        font-size: 1.2rem;
+        position: fixed;
+        bottom: 3.5em;
+        right: 1em;
+    }
+
+    .scroll-btn {
+        width: 40%;
+        font-size: 2rem;
+    }
+    
+    .contact-box {
+        width: 70%;
+    }
+
+    .contact-box > p {
+        font-size: 1rem;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .project-btn {
+        font-size: 1.5em;
+        width: 30%;
+      }
+
+    .project-body > p {
+        width: 70%;
+        margin: 1em auto 3em auto;
+    }
+
+    .about-text {
+        font-size: 1.1em;
+        padding: 0 1em 4em 1em;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .nav li {
+        padding: 0.2em 0;
+        font-size: 1.2em;
+    }
+
+    .title {
+        font-size: 2rem;
+        padding: 1em;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        padding-top: 2em;
+    }
+
+    #topBtn {
+        font-size: 1rem;
+        position: fixed;
+        bottom: 4em;
+        right: 1em;
+    }
+
+    .scroll-btn {
+        width: 40%;
+        font-size: 2rem;
+    }
+    
+    .contact-box {
+        width: 70%;
+    }
+
+    .contact-box > p {
+        font-size: 1rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    .scroll-btn {
+        font-size: 1.5em;
+    }
+
+    .project-btn {
+        font-size: 1em;
+        width: 40%;
+      }
+
+    .project-body > p {
+        width: 80%;
+        margin: 1em auto 3em auto;
+    }
+
+    .skillset{
+        width: 80%;
+        padding: 1.5em;
+    }
+    
+    .about-text {
+        font-size: 1em;
+        padding: 0 3em 4em 3em;
+        text-align: left;
+    }
+
+}
